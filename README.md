@@ -7,3 +7,8 @@ Farmers who grow potatoes suffer from serious financial standpoint losses each y
 Here, we’ll develop an end-to-end Deep Learning project in the field of Agriculture. We’ll create an Image Classification Model that will categorize potato disease using simple CNN. We’ll start by gathering data from different sites and then we’ll prepare the data for model building and then we’ll display the output in a webpage and any app prototype. This webpage will be developed on React Native and the App on React JS. Also we’ll be using TF Serving and FASTAPI for building the local server for transferring the real life image to predict the output.
 
 ![image](https://user-images.githubusercontent.com/110054448/227795488-c01e72e9-22c8-4f56-9bfd-c76b6f8af673.png)
+
+## Technology used
+•	CNN
+•	TF serving
+•	Fast API
