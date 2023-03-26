@@ -1,0 +1,118 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Potato Disease Classification </title>
+{% endblock %}
+
+{% block body %}
+
+<div class="col">
+
+    <div class="content"   style="background:url(/static/images/a.jpg) center / cover no-repeat; height:800px;padding:13%;margin:0px 0px 50px 0px ">
+        <span style="font-family: 'Dancing Script', cursive;color:#D4AF37">Potato Disease Classification</span><br>
+        <span class="machine" style="color:azure;">Using Machine Learning</span>
+        
+    </div>
+<span style="font-family: 'Dancing Script', cursive; margin:40px 0px 0px 0px ">Potato Disease</span>
+    <div class="row row-cols-1 row-cols-md-3 g-4" style="margin:40px 0px 0px 0px ">
+        <div class="col">
+          <div class="card">
+            <img src="/static/images/early.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Early Blight</h5>
+              <p class="card-text">Early blight is primarily a disease of stressed or senescing plants. Symptoms appear first on the oldest foliage. Affected leaves develop circular to angular dark brown lesions 0.12 to 0.16 inch (3–4 mm) in diameter. Concentric rings often form in lesions to produce characteristic target-board effect.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="/static/images/healthy.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Healthy </h5>
+              <p class="card-text">Potato leaves are cooked as a vegetable in many parts of the world. They are rich in vitamin B, ßcarotene, iron, calcium, zinc and protein, and the crop is more tolerant of diseases, pests and high moisture than many other leafy vegetables grown in the tropics.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="/static/images/late.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">late Blight</h5>
+              <p class="card-text">Late blight is a potentially devastating disease of tomato and potato, infecting leaves, stems, tomato fruit, and potato tubers. The disease spreads quickly in fields and can result in total crop failure if untreated. Late blight does not occur every year in Minnesota.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+    <div style="padding:10%;min-height:700px">
+      <span style="font-family: 'Dancing Script', cursive; margin:40px 0px 0px 0px ">Prediction</span>
+        <form class="p-3 text-center" , action="/" , method="post" , enctype="multipart/form-data">
+            <input class="form-control" , type="file" , name="imagefile">
+            <input class="btn btn-primary mt-3" , type="submit" , value="Predict Disease">
+        </form>
+
+        {% if prediction %}
+        <h3 class="text-center"> {{prediction}} </h3>
+        <h3 class="text-center"> {{Percentage}} </h3>
+        {% endif %}
+
+        {% if nofile %}
+        <h3 style="color: red;" class="text-center"> No Image Selected!</h3>
+        {% endif %}
+
+        {% if notimage %}
+        <h3 style="color: red;" class="text-center"> Choose Only PNG and JPEG files! </h3>
+        {% endif %}
+
+        {% if image %}
+        <img src="{{ image }}" alt="Image" style="display:block; margin-left:auto; margin-right:auto; width:70%">
+        {% endif %}
+    </div>
+
+
+<div class="footer" id="scroll1" style="margin: 20px 0px 0px 0px;text-align: center;
+color: aliceblue;
+background-color: #2f2f2f;
+position: relative;
+margin: 0px;
+padding: 15px;">
+    <div class="social" style=" padding-bottom: 20px;
+    padding-left: 25px;
+    font-size: 30px;
+    color: inherit;
+    display: inline-block;">
+      <a href="https://www.linkedin.com/in/vishal-kashyap-1a550a212/"><i class="fa fa-linkedin"></i></a>
+      <a href="#"><i class="fa fa-twitter"></i></a>
+      <a href="https://github.com/Vishal2546"><i class="fa fa-github"></i></a>
+      <a href="#"><i class="fa fa-facebook"></i></a>
+    </div>
+    <ul class="element">
+      <li class="spacing" style="
+      list-style: none;
+      display: inline-block;">About</li>
+      <li class="spacing" style="
+      list-style: none;
+      display: inline-block;">Service</li>
+      <li class="spacing" style="
+      list-style: none;
+      display: inline-block;">policy</li>
+      <li class="spacing" style="
+      list-style: none;
+      display: inline-block;">Terms</li>
+
+
+    </ul>
+
+  </div>
+</div>
+</body>
+
+</html>
+{% endblock %}
+
+
+

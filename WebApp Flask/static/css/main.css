@@ -1,0 +1,60 @@
+body{
+  background-image: url('a.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+  display:block; 
+  margin-left:auto; 
+  margin-right:auto; 
+  text-align: center;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content
+{
+  align-items: center;
+  padding: 20%;
+  color: black;
+}
+
+span{
+  font-size: 3.5rem;
+  opacity: 1;
+
+}
+
+.machine
+{
+  font-size: 5rem;
+  font-style: bold;
+  opacity: 1;
+  color: azure;
+}
+
+
+.footer
+  {
+    text-align: center;
+    color: aliceblue;
+    background-color: #2f2f2f;
+    position: relative;
+    margin: 0px;
+    padding: 15px;
+  }
+  
+  .social
+  {
+    
+    padding-bottom: 20px;
+    padding-left: 25px;
+    font-size: 30px;
+    color: inherit;
+    display: inline-block;
+  }
+  .footer ul li{
+list-style: none;
+display: inline-block;
+  }
