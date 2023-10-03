@@ -1,4 +1,4 @@
-﻿absl-py==1.2.0
+absl-py==1.2.0
 astunparse==1.6.3
 cachetools==5.2.0
 certifi==2022.6.15.1
@@ -44,7 +44,7 @@ tensorflow-estimator==2.10.0
 tensorflow-io-gcs-filesystem==0.27.0
 termcolor==1.1.0
 typing_extensions==4.3.0
-urllib3==1.26.12
+urllib3==1.26.17
 waitress==2.1.2
 Werkzeug==2.2.2
 wrapt==1.14.1
